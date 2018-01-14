@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /*background: url(./images/oakland.jpg) no-repeat center center fixed;*/ 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.viewport-container {
+	position: relative;
+	display: block;
+	min-height: 100vh;
+	padding-bottom: 1rem;
+}
+
+.viewport-container:first-of-type {
+	position: relative;
+	display: block;
+	min-height: calc(100vh - 5rem);
+}
+
+footer {
+	padding: 1rem;
+}
+
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters  > .col,
+.no-gutters  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.card {
+	border-radius: 0px;
+	border-color: rgba(170,170,170,1);
+/*	-webkit-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.21);
+	-moz-box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.21);
+	box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.21);*/	
+}
+
+.card-header:first-child {
+	border-radius: 0px;
+}
+
+.card>.list-group:last-child .list-group-item:last-child, .card-footer:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.card-body.static-height {
+	min-height: 100px;
+}
+
+p.card-text {
+	font-size: 1.2em;
+}
+
+.bg-xdark {
+	background-color: rgba(30,30,30,1);
+}
+
+.bg-black {
+	background-color: black;
+}
+
+a.list-group-item.list-group-item-action.bg-xdark:hover,
+a.list-group-item.list-group-item-action.bg-xdark:active,
+a.list-group-item.list-group-item-action.bg-xdark:focus {
+	background-color: rgba(15,15,15,1);
+}
+
+.alert {
+	border-radius: 0px;
+}
+
+.card {
+	border-color: rgba(30,30,30,1) !important;
+}
+
+/* Markdown */
+
+pre code {
+	position: relative;
+	display: block;
+	width: 100%;
+	overflow-x: scroll;
+	padding: 1rem;
+	background-color: rgba(30,30,30,1);
+	color: white;
+	text-align: left;
+}
+
+
+
+
+/* Bootstrap 4 Media Queries */
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) { 
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+}

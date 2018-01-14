@@ -1,0 +1,35 @@
+import React, { Component } from 'react';
+
+class SignupForm extends Component {   
+
+  render() {
+    return (
+      <form action="/" onSubmit={ this.props.onSubmit }>
+        {this.props.errors.summary && <div className="alert alert-danger">{ this.props.errors.summary }</div>}          
+        <div className="form-group">
+          <label htmlFor="username">Username</label>
+          <input type="text" name="username" className="form-control" onChange={ this.props.onChange } value={ this.props.user.username }/>
+          {this.props.errors.username && <small className="text-danger">{this.props.errors.username}</small>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="password">Password</label>
+          <input type="password" name="password" className="form-control" onChange={ this.props.onChange } value={ this.props.user.password } />
+          {this.props.errors.password && <small className="text-danger">{this.props.errors.password}</small>}
+        </div>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" className="form-control" onChange={ this.props.onChange } value={ this.props.user.name } />
+          {this.props.errors.name && <small className="text-danger">{this.props.errors.name}</small>}
+        </div>
+        <div className="form-group text-center">
+          <button type="submit" className="btn btn-primary mt-3">
+            Register
+          </button>
+        </div>
+      </form>      
+    );
+  }
+
+}
+
+export default SignupForm;
